@@ -1,0 +1,233 @@
+<!Doctype>
+<html>
+<head>
+<title>Team Umeed</title>
+<meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/nivo-lightbox.css">
+  <link rel="stylesheet" href="static/css/nivo_themes/default/default.css">
+  <link rel="stylesheet" href="static/css/templatemo-style.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<style>
+    body {
+      background-color: white; 
+    font-size: 20;
+    }
+		
+/* Style the sidebar - fixed full height */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 40px;
+}
+.container1 {
+  position: relative;
+  border: crimson;
+  
+  max-width: 400px;
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.container1 img {
+  width: 100%;
+  height: auto;
+  border: crimson;
+}
+
+.container1 .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container1 .btn:hover {
+  background-color: black;}
+  * {
+  box-sizing: border-box;
+}
+/* Clearfix (clear floats) */
+.row1::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+ <div class="container" style="background-color:white">
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar-header"  >
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+      </button>
+            <a href="#" class="navbar-brand" style="color: cornsilk">
+                        <img src="./static/images/finallogo.png" width=105 alt="logo"></a>
+
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ url_for('index') }}" class="active">HOME</a></li>
+        <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
+        <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</div>    
+
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-3"></div>
+      <div class="col-md-7 col-sm-9">
+        <p style="font-size: 1cm;color: aliceblue;font-weight: bold;">Welcome</p>
+        <h1 >The Intercessor</h1>
+                <h4>Your warehouse management solution</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="{{url_for('vhome')}}">Home</a> 
+  <a href="{{url_for('vfruit')}}">Fruits</a>
+  <a href="{{url_for('vmeat')}}">Meat</a>
+  <a href="{{url_for('vfish')}}">Fish</a>
+  <a href="{{url_for('vdairy')}}">Dairy</a>
+  <a href="{{url_for('contact')}}">Contact Us</a>
+  <a href="{{url_for('index')}}">Main Page</a>
+
+
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+  <h1 class="headers" style="color: #f4511e;text-align: center;">Fish</h1>
+  <p class="headers" style="text-align: center; color: blue;">Fish is an important source of protein.It is staple food in many states.</p>
+  <br><br><br><br><div class="row1">
+  <div class="container1">
+  <img src="static\images\ro.jpg" alt="ROHU" style="width:100%">
+ <a href="{{url_for('vrohu')}}"> <button class="btn">Rohu</button></a></div><div class="container1">
+   <img src="static\images\ca.jpg" alt="Catfish" style="width:100%">
+  <a href="{{url_for('vcrabs')}}"><button class="btn">Catfish</button></a></div><div class="container1">
+   <img src="static\images\cr.jpg" alt="Crab" style="width:100%">
+  <a href="{{url_for('vcrabs')}}"><button class="btn">Crab</button></a></div><div class="container1">
+   <img src="static\images\pom.jpg" alt="Pomfret" style="width:100%">
+  <a href="{{url_for('vpomfret')}}"><button class="btn">Pomfret</button></a></div><div class="container1">
+   <img src="static\images\pr.jpg" alt="Prawn" style="width:100%">
+  <a href="{{url_for('vprawns')}}"><button class="btn">Prawn</button></a></div></div>
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+
+	
+
+
+
+</body>
+</html>
+

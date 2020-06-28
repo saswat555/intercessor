@@ -1,0 +1,245 @@
+<!Doctype>
+<html>
+<head>
+<title>Team Umeed</title>
+ <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/css/nivo-lightbox.css">
+  <link rel="stylesheet" href="static/css/nivo_themes/default/default.css">
+  <link rel="stylesheet" href="static/css/templatemo-style.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+  body {
+    background-color: white;
+    font-size: 20;
+    }
+    
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.container1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 5px;
+}
+.container1 img {
+  width: 80%;
+  height: 30%;
+}
+.top-left {
+  position: absolute;
+  top: 50px;
+  left: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.image{position: relative;
+  border-radius: 50%;
+}
+img {
+  border: 5px solid #910;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  width: 180px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 250px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  position: relative;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+</head>
+<body>
+   <div class="container" style="background-color:white">
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar-header"  >
+      <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+        <span class="icon icon-bar"></span>
+      </button>
+            <a href="#" class="navbar-brand" style="color: cornsilk">
+                        <img src="./static/images/finallogo.png" width=105 alt="logo"></a>
+
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ url_for('index') }}" class="active">HOME</a></li>
+        <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
+        <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</div>    
+
+<div id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 col-sm-3"></div>
+      <div class="col-md-7 col-sm-9">
+        <p style="font-size: 1cm;color: aliceblue;font-weight: bold;">Welcome</p>
+        <h1 >The Intercessor</h1>
+                <h4>Your warehouse management solution</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="{{url_for('vhome')}}">Home</a> 
+  <a href="{{url_for('vfruit')}}">Fruits</a>
+  <a href="{{url_for('vmeat')}}">Meat</a>
+  <a href="{{url_for('vfish')}}">Fish</a>
+  <a href="{{url_for('vdairy')}}">Dairy</a>
+  <a href="{{url_for('contact')}}">Contact Us</a>
+  <a href="{{url_for('index')}}">Main Page</a>
+
+
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>
+  
+  <div class="container1">
+  <img src="static\images\ck.jpg" alt="Chicken" style="width:100%;">
+  <h1 class="top-left">Chicken</div></h1>
+  <div><img class="image" src="static\images\ck1.jpg" align="right">
+    <p>Data on women show that Kerala (92.8 percent), Goa (85.7 percent) and Assam (80.4 percent) have the highest weekly consumers of fish, chicken or meat while Punjab (4 percent), Rajasthan (6 percent) and Haryana (7.8 percent) rank the lowest.Below graph shows the consumption of chicken per day .You can press the forecast button to predict the demand of chicken.</p></div>
+  
+    <br><br>
+    <div> <iframe src="url"style="height:400px;width:800px;"></iframe></div>
+    <br>
+  <div><a href="{{url_for('chickentable')}}"></div><button class="button" onclick="openNav()"><span>Forecast</span></button></a></div>
+  
+  
+
+  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+
+	
+
+
+
+</body>
+</html>
+

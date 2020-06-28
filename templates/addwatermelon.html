@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Adding a DateTime Picker with Bootstrap by solodev</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+	<style type="text/css">
+		.container {
+			margin-top: 40px;
+		}
+		.btn-primary {
+			width: 100%;
+		}
+       body {
+         color: white;
+         background: rgb(2,0,36);
+         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(7,56,152,1) 50%, rgba(6,78,167,1) 57%, rgba(6,87,173,1) 60%, rgba(5,100,181,1) 64%, rgba(4,126,198,1) 73%, rgba(4,132,202,1) 75%, rgba(3,150,214,1) 81%, rgba(0,212,255,1) 100%);
+         }
+         .myButton {
+      -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+      -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+      box-shadow:inset 0px 1px 0px 0px #ffffff;
+      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9) );
+      background:-moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
+      background-color:#f9f9f9;
+      -webkit-border-top-left-radius:6px;
+      -moz-border-radius-topleft:6px;
+      border-top-left-radius:6px;
+      -webkit-border-top-right-radius:6px;
+      -moz-border-radius-topright:6px;
+      border-top-right-radius:6px;
+      -webkit-border-bottom-right-radius:6px;
+      -moz-border-radius-bottomright:6px;
+      border-bottom-right-radius:6px;
+      -webkit-border-bottom-left-radius:6px;
+      -moz-border-radius-bottomleft:6px;
+      border-bottom-left-radius:6px;
+   text-indent:0;
+      border:1px solid #dcdcdc;
+      display:inline-block;
+      color:#666666;
+      font-family:arial;
+      font-size:20px;
+      font-weight:bold;
+      font-style:normal;
+   height:36px;
+      line-height:36px;
+   width:109px;
+      text-decoration:none;
+      text-align:center;
+      text-shadow:0px 1px 0px #ffffff;
+   }.myButton:hover {
+      background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9) );
+      background:-moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100% );
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9');
+      background-color:#e9e9e9;
+   }.myButton:active {
+      position:relative;
+      top:1px;
+   }</style>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script> 
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+	<script type='text/javascript'>
+		$( document ).ready(function() {
+			$('#datetimepicker1').datetimepicker();
+		});
+	</script>
+    
+</head>
+<body>
+   <h1 style="text-align: center;">UPDATE THE DATA FOR WATERMELON</h1>
+<form action="/addw" method="POST">
+   <div class="form-group">
+      <label>Date</label>
+      <input type="Date" class="form-control" id="Date" name="Date" placeholder="Enter todays date">
+    </div>
+  
+    <div class="form-group">
+      <label>value</label>
+      <input type="text" class="form-control" id="GDP" name="GDP" placeholder="Enter the sales in Kg">
+    </div>
+    <button type="submit" class="btn btn-primary">submit</button>
+
+ </form>
+		
+</body>
+</html>

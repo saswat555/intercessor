@@ -1,0 +1,39 @@
+<!doctype html>
+<head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+  <style>
+    body            { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+a, h1, h2       { color: #377ba8; }
+h1, h2          { margin: 0; }
+h1              { border-bottom: 2px solid #eee; }
+h2              { font-size: 1.2em; }
+
+table.dataframe, .dataframe th, .dataframe td {
+  border: none;
+  border-bottom: 1px solid #C8C8C8;
+  border-collapse: collapse;
+  text-align:left;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 0.9em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+tr:nth-child(odd)		{ background-color:#eee; }
+tr:nth-child(even)	{ background-color:#fff; }
+
+tr:hover            { background-color: #ffff99;}
+  </style>
+</head>
+<div class=page>
+  <p style="font-size: large; text-align: center;">We will fill our stock according to the given table. If you wnt to supply stock, please contact us.</p>
+  <h1 style="text-align: center;">THE FORECAST FOR MILK</h1>
+  <p style="align-items: center;">
+  {% for table in tables %}
+    {{ table|safe }}
+  {% endfor %}
+  </p>
+</div>

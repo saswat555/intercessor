@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>The Intercessor</title>
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- stylesheet css -->
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/nivo-lightbox.css">
+	<link rel="stylesheet" href="static/css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="static/css/templatemo-style.css">
+	<!-- google web font css -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body style="background-color: white">
+	
+<!-- navigation -->
+
+	<div class="container" style="background-color:white">
+		<div class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="navbar-header"  >
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+            <a href="#" class="navbar-brand" style="color: cornsilk"><!--img src="images/newlogo.png" class="img-responsive" alt="logo" si-->
+                        <img src="static/images/finallogo.png" width=105 alt="logo" si></a>
+
+		</div>
+		<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+				<li><a href="{{ url_for('index') }}" class="active">HOME</a></li>
+				<li><a href="{{ url_for('about') }}">ABOUT US</a></li>
+				<li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+				<li><a href="{{url_for('blog')}}">BLOG</a></li>
+			</ul>
+		</div>
+	</div>
+</div>		
+
+<!-- home section -->
+<div id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5 col-sm-3"></div>
+			<div class="col-md-7 col-sm-9">
+				<h3>welcome to</h3>
+				<h1>The Intercessor</h1>
+                <h4>Your warehouse management solution</h4>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- divider section -->
+<div class="divider">
+	<div class="container">
+		<div class="row">
+			<a href="{{url_for('login')}}" style="color: white;">
+			<div class="col-md-4 col-sm-6">
+				<div class="divider-wrapper divider-one">
+					<i class="fa fa-key"></i>
+					<h2>Admin</h2>
+					<p>Change stock numbers, only for authorised personnel.</p></a>
+				</div>
+			</div>
+			<a href = "{{url_for('cstock')}}"><div class="col-md-4 col-sm-6">
+				<div class="divider-wrapper divider-two"  style="color: white">
+					<i class="fa fa-edit"></i>
+					<h2>Check stock</h2>
+					<p style="color: white">Take a note of current stock, and see forecast.</p>
+				</div>
+                </div></a>
+			<a href = "https://team-umeed-economyforecaster.shinyapps.io/the_forecaster_tool/?_ga=2.154486526.796972860.1593145087-1710320429.1592228132"><div class="col-md-4 col-sm-12">
+				<div class="divider-wrapper divider-three" style="color: white">
+					<i class="fa fa-cart-plus"></i>
+					<h2>New stock</h2>
+					<p>Check predictions for a new stock , using test data.</p>
+				</div>
+            </div></a>
+		</div>
+	</div>
+</div>
+
+<!-- about section -->
+<div id="about" style="background-color: #36454f">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<img src="static/images/about-img.jpg" class="img-responsive" alt="about img">
+			</div>
+			<div class="col-md-6 col-sm-12 about-des" >
+				<h2>Team Umeed</h2>
+				<p>We provide warehouse managment solutions using Machine Learning.</p>
+				<p>This model helps the company keep an eye on the managment of perishable goods in warehouse.This model accurately predicts the demand of perishable raw materials for next ten weeks, and informs the user of it's replenishing or overfloeing stocks.</p>
+				<a href="{{url_for('about')}}" class="btn btn-default">LEARN MORE</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- portfolio section -->
+<div id="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<h2 style="color: black">Features Itinerary</h2>
+                <p>Our webapp has a lot to serve you.</p><p>Look below to find out what impresses you the most!!</p>
+			</div>
+         </div>
+         
+         <div class="row mt30">
+            
+			<div class="col-md-4 col-sm-4 col-xs-4">
+				<a data-lightbox-gallery="portfolio-gallery"><img src="static/images/data.jpg" alt="portfolio img" ></a>Daily Data Updating System
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<a data-lightbox-gallery="portfolio-gallery"><img src="static/images/accurate.jpg" alt="portfolio img"></a>
+				High Accuracy Predictions
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<a data-lightbox-gallery="portfolio-gallery"><img src="static/images/easy.png" width="200" alt="portfolio img"></a>
+				Easy User Interface
+			</div>
+            
+			<div class="col-md-4 col-sm-6 col-xs-6">
+				<a data-lightbox-gallery="portfolio-gallery"><img src="static/images/multi.jpg" alt="portfolio img"></a>
+				Multiple Platform Support
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6">
+				<a data-lightbox-gallery="portfolio-gallery"><img src="static/images/daily.png" alt="portfolio img"></a>
+				Daily Prediction
+			</div>
+			<div class="col-md-4 col-sm-6 col-xs-6">
+				<a data-lightbox-gallery="portfolio-gallery"><img src="static/images/wastage.jpg" alt="portfolio img"></a>
+				Reduces Food Wastages
+			</div>
+			
+			<div class="col-md-12 col-sm-12">
+				<a rel="nofollow" href="{{url_for('blog')}}" class="btn btn-default" style="color: black">View More</a>
+			</div>
+		</div>
+	</div>
+</div>		
+
+<!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+        
+			<div class="col-md-5 col-sm-4">
+				<img src="static/images/finallogo.png" width="300" class="img-responsive" alt="logo">
+				<p>INTERCESSOR is a free website to help you stock your warehouses adequately. Feel free to use it!!!</p>
+				<!--p><i class="fa fa-phone"></i> 010-020-0340</p-->
+				<p><i class="fa fa-envelope-o"></i> teamumeed555@gmail.com</p>
+              <!--p><i class="fa fa-globe"></i> www.company.com</p-->
+			</div>
+
+			
+            
+		</div>
+	</div>
+</footer>
+
+<!-- copyright section -->
+<div class="copyright" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<p>Copyright © 2084 Team Umeed</p>
+				<p>Logo Copyright © Reserved </p>
+			</div>
+			<div class="col-md-6 col-sm-6">
+				<ul class="social-icons">
+					
+					<li><a href="{{url_for('contact')}}" class="fa fa-envelope-o"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- javascript js -->	
+<script src="static/js/jquery.js"></script>
+<script src="static/js/bootstrap.min.js"></script>	
+<script src="static/js/nivo-lightbox.min.js"></script>
+<script src="static/js/custom.js"></script>
+
+</body>
+</html>

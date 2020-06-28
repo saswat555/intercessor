@@ -1,0 +1,83 @@
+
+/* IMPORT GOOGLE FONTS */
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+
+
+
+/* NEWS FRAME AREA TOP LEVEL PAGE - WIDTH ADDS BORDER */
+
+#news_iframe_scroll	{
+		width: 100%;
+		max-width: 250px;
+		min-width: 200px;
+		margin: 0px auto 10px auto;
+		border: #000000 1px solid;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		}
+
+#news_iframe_scroll iframe 
+		{
+		width: 100%;
+		height: 176px; /* IF YOU EDIT HEIGHT EDIT THE SCROLLING SCRIPT HEIGHT!!!! */
+		display: block;
+		margin: 0px;
+		padding: 0px;
+		overflow: hidden;
+		}
+
+.news_scroll-title 
+		{
+		color: #FFFFFF;
+		font: normal 20px "Droid Sans", arial, sans-serif;
+		text-align: left;
+		background-color: #276396;
+		padding: 5px 5px 5px 5px;
+		border-bottom: #C0C0C0 5px solid;
+		}
+
+
+
+
+/* EMBEDDED NEWS PAGE BODY */
+
+#NewsDiv	{ position: absolute; left: 0; top: 0px; width: 100%; }
+
+body.news-scroll {
+		background-color: #FFFFFF;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		}
+
+/* FONTS & PADDING */
+
+.scroll-text-if	{
+		color: #666666;
+		font: normal 12px "Droid Sans", arial, sans-serif;
+		text-align: left;
+		padding: 8px 7px 0px 7px;
+		}
+
+.scroll-title-if {
+		color: #000000;
+		font: bold 15px "Droid Sans", arial, sans-serif;
+		text-align: left;
+		border-bottom: #666666 0px solid;
+		}
+
+/* EMBEDDED NEWS PAGE LINK COLORS */
+
+.news-scroll a:link	{ color: #0033FF; text-decoration: none; }
+
+.news-scroll a:visited	{ color: #6633FF; text-decoration: none; }
+
+.news-scroll a:active	{ color: #0033FF; text-decoration: none; }
+
+.news-scroll a:hover	{ color: #6699FF; text-decoration: underline; }
+
+
+
