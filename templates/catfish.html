@@ -193,14 +193,15 @@ img {
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="home.html">Home</a> 
-  <a href="fruit.html">Fruits</a>
-  <a href="meat.html">Meat</a>
-  <a href="fish.html">Fish</a>
-  <a href="dairy.html">Dairy</a>
-  <a href="#">Contact Us</a>
-</div>
+  <a href="{{url_for('home')}}">Main</a> 
+  <a href="{{url_for('fruit')}}">Fruits</a>
+  <a href="{{url_for('meat')}}">Meat</a>
+  <a href="{{url_for('fish')}}">Fish</a>
+  <a href="{{url_for('dairy')}}">Dairy</a>
+  <a href="{{url_for('contact')}}">Contact Us</a>
+  <a href="{{url_for('index')}}">Sign Out</a>
 
+</div>
 <div id="main">
   <button class="openbtn" onclick="openNav()">☰</button>
   
