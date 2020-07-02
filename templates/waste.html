@@ -251,6 +251,19 @@
 <script src="static/js/bootstrap.min.js"></script>	
 <script src="static/js/nivo-lightbox.min.js"></script>
 <script src="static/js/custom.js"></script>
+<script>
+    window.watsonAssistantChatOptions = {
+        integrationID: "5d9226a5-721b-4565-a39e-f74940c110f1", // The ID of this integration.
+        region: "eu-gb", // The region your integration is hosted in.
+        serviceInstanceID: "146a5df6-e058-4bb0-859a-51e8eaa9d119", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+      document.head.appendChild(t);
+    });
+  </script>
 
 </body>
 </html>
