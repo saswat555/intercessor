@@ -1254,6 +1254,9 @@ def vcurd():
 @app.route('/blog')
 def blog():
     return render_template('blog.html')
+@app.route('/waste')
+def waste():
+    return render_template('waste.html')
 
 
 

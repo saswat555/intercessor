@@ -1,7 +1,7 @@
 <!Doctype>
 <html>
 <head>
-<title>Team Umeed</title>
+<title>The Intercessor</title>
 <meta name="keywords" content="">
   <meta name="description" content="">
   <meta charset="utf-8">
@@ -101,9 +101,7 @@
 .image{position: relative;
   border-radius: 50%;
 }
-img {
-  border: 5px solid #910;
-}
+
 
 .button {
   display: inline-block;
@@ -149,8 +147,8 @@ img {
 </style>
 </head>
 <body>
-<div class="container" style="background-color:white">
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
+<div align="center" >
+    <div class="navbar navbar-default navbar-static-top" role="navigation" style="width: 90%;" >
     <div class="navbar-header"  >
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon icon-bar"></span>
@@ -158,7 +156,7 @@ img {
         <span class="icon icon-bar"></span>
       </button>
             <a href="#" class="navbar-brand" style="color: cornsilk">
-                        <img src="./static/images/finallogo.png" width=105 alt="logo"></a>
+                        <img src="./static/images/finallogo.png" width=100 alt="logo"></a>
 
     </div>
     <div class="collapse navbar-collapse">
@@ -166,6 +164,7 @@ img {
         <li><a href="{{ url_for('index') }}" class="active">HOME</a></li>
         <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
         <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+        <li><a href="{{url_for('blog')}}">BLOG</a></li>
       </ul>
     </div>
   </div>
@@ -211,7 +210,7 @@ img {
     <p>Curd is used for a variety of purposes.Currently, Maharashtra represents the region with highest market share in the country. It is followed by Uttar Pradesh and Andhra Pradesh.Below graph shows the consumption of Curd per day .You can press the forecast button to predict the demand of Curd.</p></div>
    
     <br><br>
-    <div><iframe src="url"style="height:400px;width:800px;"></iframe></div>
+    <div><iframe src=" https://teamumeed.shinyapps.io/curd/"style="height:400px;width:800px;"></iframe></div>
     <br>
   <div><a href="{{url_for('curdtable')}}"><button class="button" onclick="openNav()"><span>Forecast</span></button></a></div></div>
   

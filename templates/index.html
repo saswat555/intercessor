@@ -22,8 +22,8 @@
 	
 <!-- navigation -->
 
-	<div class="container" style="background-color:white">
-		<div class="navbar navbar-default navbar-static-top" role="navigation">
+	<div align="center" >
+		<div class="navbar navbar-default navbar-static-top" role="navigation" style="width: 90%;" >
 		<div class="navbar-header"  >
 			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon icon-bar"></span>
@@ -31,15 +31,17 @@
 				<span class="icon icon-bar"></span>
 			</button>
             <a href="#" class="navbar-brand" style="color: cornsilk"><!--img src="images/newlogo.png" class="img-responsive" alt="logo" si-->
-                        <img src="static/images/finallogo.png" width=105 alt="logo" si></a>
+                        <img src="static/images/finallogo.png" width=100 alt="logo" si></a>
 
 		</div>
 		<div class="collapse navbar-collapse">
-						<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right">
 				<li><a href="{{ url_for('index') }}" class="active">HOME</a></li>
 				<li><a href="{{ url_for('about') }}">ABOUT US</a></li>
 				<li><a href="{{ url_for('contact') }}">CONTACT</a></li>
 				<li><a href="{{url_for('blog')}}">BLOG</a></li>
+				<li><a href="{{url_for('waste')}}">SPOILED FOOD MANAGEMENT</a></li>
+
 			</ul>
 		</div>
 	</div>

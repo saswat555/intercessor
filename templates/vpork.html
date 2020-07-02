@@ -1,7 +1,7 @@
 <!Doctype>
 <html>
 <head>
-<title>Team Umeed</title>
+<title>The Intercessor</title>
 <meta name="keywords" content="">
   <meta name="description" content="">
   <meta charset="utf-8">
@@ -101,9 +101,7 @@
 .image{position: relative;
   border-radius: 50%;
 }
-img {
-  border: 5px solid #910;
-}
+
 
 .button {
   display: inline-block;
@@ -149,8 +147,8 @@ img {
 </style>
 </head>
 <body>
-   <div class="container" style="background-color:white">
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
+   <div align="center" >
+    <div class="navbar navbar-default navbar-static-top" role="navigation" style="width: 90%;" >
     <div class="navbar-header"  >
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon icon-bar"></span>
@@ -158,7 +156,7 @@ img {
         <span class="icon icon-bar"></span>
       </button>
             <a href="#" class="navbar-brand" style="color: cornsilk">
-                        <img src="./static/images/finallogo.png" width=105 alt="logo"></a>
+                        <img src="./static/images/finallogo.png" width=100 alt="logo"></a>
 
     </div>
     <div class="collapse navbar-collapse">
@@ -166,6 +164,7 @@ img {
         <li><a href="{{ url_for('index') }}" class="active">HOME</a></li>
         <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
         <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+        <li><a href="{{url_for('blog')}}">BLOG</a></li>
       </ul>
     </div>
   </div>
@@ -193,13 +192,12 @@ img {
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="{{url_for('vhome')}}">Home</a> 
+  <a href="{{url_for('vhome')}}">Main Page</a>
   <a href="{{url_for('vfruit')}}">Fruits</a>
   <a href="{{url_for('vmeat')}}">Meat</a>
   <a href="{{url_for('vfish')}}">Fish</a>
   <a href="{{url_for('vdairy')}}">Dairy</a>
   <a href="{{url_for('contact')}}">Contact Us</a>
-  <a href="{{url_for('index')}}">Main Page</a>
 
 
 </div>
@@ -214,7 +212,7 @@ img {
     <p>Of these states, Nagaland has the highest per capita consumption. The tribal population in particular appears to consume more pork on average than other groups. Traders in both Assam and Nagaland reported that the demand for pork was increasing along with prices.Below graph shows the consumption of pork per day .You can press the forecast button to predict the demand of Pork .</p></div>
    
     <br><br>
-    <div> <iframe src="url"style="height:400px;width:800px;"></iframe></div>
+    <div> <iframe src=" https://teamumeed.shinyapps.io/curd/"style="height:400px;width:800px;"></iframe></div>
     <br>
     <div><a href="{{url_for('porktable')}}"><button class="button" onclick="openNav()"><span>Forecast</span></button></a></div>
   

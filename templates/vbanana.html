@@ -1,7 +1,7 @@
 <!Doctype>
 <html>
 <head>
-<title>Team Umeed</title>
+<title>The Intercessor</title>
  <meta name="keywords" content="">
   <meta name="description" content="">
   <meta charset="utf-8">
@@ -101,9 +101,7 @@
 .image{position: relative;
   border-radius: 50%;
 }
-img {
-  border: 5px solid #910;
-}
+
 
 .button {
   display: inline-block;
@@ -149,8 +147,8 @@ img {
 </style>
 </head>
 <body>
-   <div class="container" style="background-color:white">
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
+   <div align="center" >
+    <div class="navbar navbar-default navbar-static-top" role="navigation" style="width: 90%;" >
     <div class="navbar-header"  >
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon icon-bar"></span>
@@ -158,7 +156,7 @@ img {
         <span class="icon icon-bar"></span>
       </button>
             <a href="#" class="navbar-brand" style="color: cornsilk">
-                        <img src="./static/images/finallogo.png" width=105 alt="logo"></a>
+                        <img src="./static/images/finallogo.png" width=100 alt="logo"></a>
 
     </div>
     <div class="collapse navbar-collapse">
@@ -166,6 +164,7 @@ img {
         <li><a href="{{ url_for('index') }}" class="active">HOME</a></li>
         <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
         <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+        <li><a href="{{url_for('blog')}}">BLOG</a></li>
       </ul>
     </div>
   </div>
@@ -213,7 +212,7 @@ img {
     Like Jharkhand has Basrai, Singapuri .Karnataka has Dwarf Cavendish, Robusta, Rasthali, Poovan, Monthan, Elakkibale,etc. Same way many different varieties are grow1n in different parts of the country.It is one of the most common and widely used fruit which is available throughout the year.Also it is one of the most wasted fruits.You can press the forecast button to predict the demand of banana.</p></div>
     
     <br><br>
-    <div><iframe src="url"style="height:400px;width:800px;"></iframe></div> 
+    <div><iframe src="https://team-umeed-economyforecaster.shinyapps.io/Crabs/"style="height:400px;width:800px;"></iframe></div> 
     <br>
     <div><a href="{{url_for('bananatable')}}"><button class="button" onclick="openNav()"><span>Forecast</span></button></a></div>
   

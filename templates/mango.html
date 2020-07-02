@@ -1,7 +1,7 @@
 <!Doctype>
 <html>
 <head>
-<title>Team Umeed</title>
+<title>The Intercessor</title>
  <meta name="keywords" content="">
   <meta name="description" content="">
   <meta charset="utf-8">
@@ -101,9 +101,9 @@
 .image{position: relative;
   border-radius: 50%;
 }
-img {
+/*img {
   border: 5px solid #910;
-}
+}*/
 
 .button {
   display: inline-block;
@@ -149,8 +149,8 @@ img {
 </style>
 </head>
 <body>
-  <div class="container" style="background-color:white">
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div align="center" >
+    <div class="navbar navbar-default navbar-static-top" role="navigation" style="width: 90%;" >
     <div class="navbar-header"  >
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon icon-bar"></span>
@@ -158,7 +158,7 @@ img {
         <span class="icon icon-bar"></span>
       </button>
             <a href="#" class="navbar-brand" style="color: cornsilk">
-                        <img src="./static/images/finallogo.png" width=105 alt="logo"></a>
+                        <img src="./static/images/finallogo.png" width=100 alt="logo"></a>
 
     </div>
     <div class="collapse navbar-collapse">
@@ -166,6 +166,7 @@ img {
         <li><a href="{{ url_for('index') }}" class="active">HOME</a></li>
         <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
         <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+        <li><a href="{{url_for('blog')}}">BLOG</a></li>
       </ul>
     </div>
   </div>
@@ -213,7 +214,7 @@ img {
     Like Alphonso in Ratnagiri,Maharashtra and Kesar mangoes in Gujarat.Dasheri mangoes are grow1n in UP.Uttar Pradesh is the leading mango producing state with production of 3,623.22 thousand tons followed by Andhra Pradesh state which has production of 3,363.40 thousand tons. Then comes Karnataka 1,778.75 thousand tons, followed by Bihar and Gujarat i.e. 1,334.87 and 911.30 thousand tons respectively.Also it is one of the most wasted fruits.Below graph shows the consumption of mangoes per day .You can press the forecast button to predict the demand of mangoes.</p></div>
     
     <br><br>
-    <div> <iframe src="url"style="height:400px;width:800px;"></iframe></div>
+    <div> <iframe src=" https://teamumeed.shinyapps.io/mango/"style="height:400px;width:800px;"></iframe></div>
     <br>
   <div><a href="{{url_for('mangoform')}}"><button class="button" ><span>Update</span></button></a>
     <a href="{{url_for('mangoforecast')}}"><button class="button" ><span>Forecast</span></button></a></div></div>

@@ -1,7 +1,7 @@
 <!Doctype>
 <html>
 <head>
-<title>Team Umeed</title>
+<title>The Intercessor</title>
 <meta name="keywords" content="">
   <meta name="description" content="">
   <meta charset="utf-8">
@@ -102,9 +102,7 @@
 .image{position: relative;
   border-radius: 50%;
 }
-img {
-  border: 5px solid #910;
-}
+
 
 .button {
   display: inline-block;
@@ -151,8 +149,8 @@ img {
 </head>
 <body>
 
-    <div class="container" style="background-color:white">
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div align="center" >
+    <div class="navbar navbar-default navbar-static-top" role="navigation" style="width: 90%;" >
     <div class="navbar-header"  >
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon icon-bar"></span>
@@ -160,7 +158,7 @@ img {
         <span class="icon icon-bar"></span>
       </button>
             <a href="#" class="navbar-brand" style="color: cornsilk">
-                        <img src="./static/images/finallogo.png" width=105 alt="logo"></a>
+                        <img src="./static/images/finallogo.png" width=100 alt="logo"></a>
 
     </div>
     <div class="collapse navbar-collapse">
@@ -168,6 +166,7 @@ img {
         <li><a href="{{ url_for('index') }}" class="active">HOME</a></li>
         <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
         <li><a href="{{ url_for('contact') }}">CONTACT</a></li>
+        <li><a href="{{url_for('blog')}}">BLOG</a></li>
       </ul>
     </div>
   </div>
@@ -215,7 +214,7 @@ img {
     <p>Butter is used for a variety of purposes.Currently, Uttar Pradesh represents the region with highest market share in the country. It is followed by Maharashtra and Rajasthan..Below graph shows the consumption of Butter per day .You can press the forecast button to predict the demand of Butter.</p></div>
    
     <br><br>
-    <div> <iframe src="url"style="height:400px;width:800px;"></iframe></div>
+    <div> <iframe src="https://team-umeed-economyforecaster.shinyapps.io/apples/?_ga=2.246310787.642252889.1593668397-13999958.1593668397"style="height:400px;width:800px;"></iframe></div>
     <br>
   <div><a href="{{url_for('butterform')}}"><button class="button" ><span>Update</span></button></a>
     <a href="{{url_for('butterforecast')}}"><button class="button"><span>Forecast</span></button></a></div>
