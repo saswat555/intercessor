@@ -13,6 +13,11 @@
   <link rel="stylesheet" href="static/css/nivo_themes/default/default.css">
   <link rel="stylesheet" href="static/css/templatemo-style.css">
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
   body {
     background-color: white; 
@@ -210,7 +215,7 @@
     <p>Milk is used for a variety of purposes.The state of Uttar Pradesh produced the highest amount of milk in India at about 30.5 million metric tons, followed by Rajasthan in the financial year 2019.Below graph shows the consumption of Milk per day .You can press the forecast button to predict the demand of Milk .</p></div>
    
     <br><br>
-    <div> <iframe src="https://teamumeed.shinyapps.io/milk/"style="height:400px;width:800px;"></iframe></div>
+    <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://teamumeed.shinyapps.io/milk/"style="height:400px;width:800px;"></iframe></div>
     <br>
   <div><a href="{{url_for('milkform')}}"><button class="button" ><span>Update</span></button></a>
     <a href="{{url_for('milkforecast')}}"><button class="button" ><span>Forecast</span></button></a></div></div>
