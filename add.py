@@ -2,7 +2,7 @@ import pandas as pd
 import datetime
  
 def addapple(Date,GDP):
-    isThere = False
+    isThere = False                                             //A seperate function for updating the data regularly
     
     # Creating the first Dataframe using dictionary 
     df1 = pd.read_csv('apples.csv')

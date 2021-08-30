@@ -22,7 +22,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html')                //Flask routes
 
 
 @app.route('/bananaforecast')
@@ -40,7 +40,7 @@ def bananaforecast():
                             )
 
             self.DB = self.client[self.dBName]
-            self.collection = self.DB[self.collectionName]
+            self.collection = self.DB[self.collectionName]      //Change the mongodb credentials
 
         def InsertData(self, path=None):
             """
